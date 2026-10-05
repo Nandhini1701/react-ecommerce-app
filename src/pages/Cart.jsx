@@ -39,7 +39,7 @@ function Cart() {
             <div className="cart-item" key={item.id}>
 
                 <img
-                    src={item.image}
+                    src={item.images[0]}
                     width="100"
                 />
 

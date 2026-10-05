@@ -13,7 +13,7 @@ function ProductCard({ product }) {
 
       <Link to={`/product/${product.id}`}>
 
-        <img src={product.image} />
+        <img src={product.images[0]} />
 
         <h3>{product.title}</h3>
 

@@ -27,8 +27,8 @@ function App() {
 
   useEffect(() => {
 
-  fetch("https://fakestoreapi.com/products")
-
+  fetch("https://dummyjson.com/products")
+  
     .then((response) => {
 
       if (!response.ok) {
@@ -41,7 +41,7 @@ function App() {
 
     .then((data) => {
 
-      setProducts(data)
+      setProducts(data.products)
 
       setLoading(false)
 

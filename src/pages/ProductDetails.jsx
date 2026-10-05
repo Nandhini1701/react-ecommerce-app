@@ -23,7 +23,7 @@ function ProductDetails({ products }) {
     <div className="details-container">
 
       <img
-        src={singleProduct.image}
+        src={singleProduct.images[0]}
         alt={singleProduct.title}
       />
 
@@ -35,7 +35,7 @@ function ProductDetails({ products }) {
 
         <h3>${singleProduct.price}</h3>
 
-        <p>⭐ {singleProduct.rating.rate}</p>
+        <p>⭐ {singleProduct.rating}</p>
 
         <button
           onClick={() => addToCart(singleProduct)}
